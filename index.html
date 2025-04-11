@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Весенний семестр 2025 - Проровская К.</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+        }
+        .header {
+            background: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        .subject-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            height: 100%;
+        }
+        .subject-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .subject-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #2575fc;
+        }
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        .poem {
+            font-style: italic;
+            line-height: 1.8;
+            padding: 20px;
+            background-color: #f1f8ff;
+            border-left: 4px solid #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Весенний семестр 2025</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rules">Мои правила</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#subjects">Предметы</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header-content container">
+            <h1 class="display-4">Проровская К.</h1>
+            <p class="lead">Весенний семестр 2025 года</p>
+        </div>
+    </header>
+
+    <!-- Основное содержимое -->
+    <div class="container">
+        <!-- Мои правила -->
+        <section id="rules" class="mb-5">
+            <h2 class="text-center mb-4">Мои правила</h2>
+            <div class="poem">
+                <p>Человеку надо мало:<br>
+                чтоб искал<br>
+                и находил.</p>
+
+                <p>Чтоб имелись для начала<br>
+                Друг — один<br>
+                и враг — один...</p>
+
+                <p>Человеку надо мало:<br>
+                чтоб тропинка вдаль вела.<br>
+                Чтоб жила на свете<br>
+                мама.<br>
+                Сколько нужно ей — жила.</p>
+            </div>
+        </section>
+
+        <!-- Предметы -->
+        <section id="subjects" class="mb-5">
+            <h2 class="text-center mb-4">Предметы семестра</h2>
+            <div class="row">
+                <!-- Информатика -->
+                <div class="col-md-4">
+                    <div class="card subject-card">
+                        <div class="card-body text-center">
+                            <div class="subject-icon">💻</div>
+                            <h5 class="card-title">Информатика</h5>
+                            <p class="card-text">Двоичный код — это способ представления данных в виде кода, в котором каждый разряд принимает одно из двух возможных значений, обычно обозначаемых цифрами 0 и 1.</p>
+                            <a href="#informatics" class="btn btn-primary" data-bs-toggle="collapse">Подробнее</a>
+                            <div class="collapse mt-3" id="informatics">
+                                <p class="card-text">«0» это выключенное состояние, а «1» это включенное состояние. Разряд в этом случае называется двоичным разрядом.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ботаника -->
+                <div class="col-md-4">
+                    <div class="card subject-card">
+                        <div class="card-body text-center">
+                            <div class="subject-icon">🌱</div>
+                            <h5 class="card-title">Ботаника</h5>
+                            <p class="card-text">Корневая система растений — это комплекс всех корней растения, включающий главный корень, боковые корни разных порядков, а также дополнительные корни.</p>
+                            <a href="#botany" class="btn btn-primary" data-bs-toggle="collapse">Подробнее</a>
+                            <div class="collapse mt-3" id="botany">
+                                <p class="card-text">Она выполняет важные функции обеспечения растения водой и питательными веществами, которые убираются из почвы.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Математика -->
+                <div class="col-md-4">
+                    <div class="card subject-card">
+                        <div class="card-body text-center">
+                            <div class="subject-icon">🧮</div>
+                            <h5 class="card-title">Математика</h5>
+                            <p class="card-text">Умножение — одна из основных математических операций над двумя аргументами, которые называются множителями или сомножителями.</p>
+                            <a href="#math" class="btn btn-primary" data-bs-toggle="collapse">Подробнее</a>
+                            <div class="collapse mt-3" id="math">
+                                <p class="card-text">Результат умножения называется их произведением. Первый аргумент иногда называют множимым, а второй — множителем.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- История -->
+                <div class="col-md-4">
+                    <div class="card subject-card">
+                        <div class="card-body text-center">
+                            <div class="subject-icon">🏛️</div>
+                            <h5 class="card-title">История</h5>
+                            <p class="card-text">Исторический деятель — это лицо, которое оказало значительное влияние на событийную конъюнктуру своего времени.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Правоведение -->
+                <div class="col-md-4">
+                    <div class="card subject-card">
+                        <div class="card-body text-center">
+                            <div class="subject-icon">⚖️</div>
+                            <h5 class="card-title">Правоведение</h5>
+                            <p class="card-text">Трудовой договор — это письменное соглашение между работодателем и работником, регулирующее их взаимные права и обязанности в сфере труда.</p>
+                            <a href="#law" class="btn btn-primary" data-bs-toggle="collapse">Подробнее</a>
+                            <div class="collapse mt-3" id="law">
+                                <p class="card-text">При возникновении конфликтов работник или работодатель могут сослаться на содержание трудового договора для защиты своих прав.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Физра -->
+                <div class="col-md-4">
+                    <div class="card subject-card">
+                        <div class="card-body text-center">
+                            <div class="subject-icon">🏃‍♀️</div>
+                            <h5 class="card-title">Физкультура</h5>
+                            <p class="card-text">Зарядка (у́тренняя гигиени́ческая гимна́стика) — гимнастический комплекс физических упражнений, выполняемых утром после пробуждения.</p>
+                            <a href="#pe" class="btn btn-primary" data-bs-toggle="collapse">Подробнее</a>
+                            <div class="collapse mt-3" id="pe">
+                                <p class="card-text">Зарядка помогает ускорению перехода от состояния сна к активной деятельности и является частью лечебной физической культуры.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Проф. деятельность -->
+                <div class="col-md-6">
+                    <div class="card subject-card">
+                        <div class="card-body text-center">
+                            <div class="subject-icon">🏗️</div>
+                            <h5 class="card-title">Введение в профессиональную деятельность</h5>
+                            <p class="card-text">Малые архитектурные формы (МАФ) — вспомогательные архитектурные сооружения, оборудование и художественно-декоративные элементы.</p>
+                            <a href="#prof" class="btn btn-primary" data-bs-toggle="collapse">Подробнее</a>
+                            <div class="collapse mt-3" id="prof">
+                                <p class="card-text">Они обладают собственными простыми функциями и дополняют общую композицию архитектурного ансамбля застройки. Некоторые элементы МАФ имеют исключительно художественно-декоративное назначение.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Черчение -->
+                <div class="col-md-6">
+                    <div class="card subject-card">
+                        <div class="card-body text-center">
+                            <div class="subject-icon">✏️</div>
+                            <h5 class="card-title">Черчение</h5>
+                            <p class="card-text">Эскиз — это чертеж, выполненный без применения чертежных инструментов (от руки) и точного соблюдения стандартного масштаба.</p>
+                            <a href="#drawing" class="btn btn-primary" data-bs-toggle="collapse">Подробнее</a>
+                            <div class="collapse mt-3" id="drawing">
+                                <p class="card-text">Эскиз выполняется в глазомерном масштабе, но с соблюдением пропорций между отдельными элементами детали.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Подвал -->
+    <footer class="text-center">
+        <div class="container">
+            <p>Весенний семестр 2025 - Проровская К.</p>
+            <p>Все права защищены</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
